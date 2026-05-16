@@ -1,5 +1,4 @@
-```markdown
-# 🌪️ The Invisible Hammer: LBM Vortex Shedding Simulation
+# The Invisible Hammer: LBM Vortex Shedding Simulation
 
 Welcome to the digital wind tunnel. This repository contains the complete Python source code for simulating a **Von Kármán Vortex Street** using the Lattice Boltzmann Method (LBM). 
 
