@@ -1,4 +1,4 @@
-#️ The Physical Battering Ram: Sound Wave Visualizer
+# The Physical Battering Ram: Sound Wave Visualizer
 
 Welcome to the digital wind tunnel. This repository contains a high-performance, parallelized Python rendering engine built to visualize the physical reality of human speech.
 
