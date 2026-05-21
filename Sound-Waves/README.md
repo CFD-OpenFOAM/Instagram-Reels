@@ -1,4 +1,3 @@
-```markdown
 #️ The Physical Battering Ram: Sound Wave Visualizer
 
 Welcome to the digital wind tunnel. This repository contains a high-performance, parallelized Python rendering engine built to visualize the physical reality of human speech.
@@ -70,7 +69,3 @@ Open the script and tweak these variables to change the physics:
 * `N_PARTICLES = 1500`: Increase this for a denser air cloud (Warning: heavier compute!).
 * `wave_speed = 0.5`: Change how fast the longitudinal compression travels across the screen.
 * `displacement[...] = audio[...] * 0.15`: Change the `0.15` multiplier to make the molecules react more or less violently to the volume of the audio.
-
-```
-
-```
