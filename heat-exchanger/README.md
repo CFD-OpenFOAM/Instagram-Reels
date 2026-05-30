@@ -87,4 +87,3 @@ pip install numpy matplotlib
 
 1.  **Adjust Pipe Length (NTU):** Click and drag the slider at the bottom of the window. Moving it to the right simulates a longer pipe, allowing the fluids more time to exchange heat.
 2.  **Switch Modes:** Click the **Mode** button at the very bottom to alternate between Parallel Flow and Counter-Flow physics.
-3.  
