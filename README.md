@@ -1,76 +1,93 @@
 # Instagram-Reels
 
-Tools built during demonstration on reels.
+A showcase of Python-based engineering, physics, and numerical-method visualization tools created for short-form educational content.
 
-## Utilities in this repository
+These projects are designed to make technical ideas easier to see, explore, and explain — whether through simulation, interactive controls, or rendered animation optimized for vertical video formats.
 
-This repository contains a collection of Python-based educational and visualization utilities created for short-form engineering and science content. Each folder explores a different concept through simulation, animation, or interactive visual explanation.
+## What this repository contains
 
-### Maze-Runner
+Each folder in this repository is a self-contained utility focused on a different engineering or science concept. Together, they form a small library of visual demos for topics such as control systems, heat transfer, optimization, acoustics, traffic dynamics, and fluid mechanics.
 
-`Maze-Runner/` is a maze generation and solving utility built around a physics-inspired approach. It creates a random solvable maze, applies Laplacian heat diffusion across the open paths, and then traces the solution by following the temperature gradient.
+## Project showcase
 
-The project also renders the full process as an animated video, making it useful both as a numerical methods demo and as a visually engaging explanation of potential-field-based pathfinding.
+| Utility | Focus area | What it demonstrates |
+|---|---|---|
+| [`Maze-Runner/`](./Maze-Runner/) | Numerical methods / pathfinding | Random maze generation, Laplacian heat diffusion, and gradient-based path tracing rendered as an animation. |
+| [`PID-Drunk-Robot/`](./PID-Drunk-Robot/) | Control systems | Real-time PID tuning for a 1D stabilization problem, showing overshoot, damping, and steady-state correction. |
+| [`heat-exchanger/`](./heat-exchanger/) | Heat transfer | Interactive comparison of parallel-flow and counter-flow heat exchanger temperature profiles. |
+| [`Sound-Waves/`](./Sound-Waves/) | Acoustics / signal processing | Audio visualization using both frequency-domain analysis and particle-based wave motion. |
+| [`Topology-Optimization/`](./Topology-Optimization/) | Structural optimization | SIMP-based cantilever beam topology optimization using finite element analysis and material removal. |
+| [`Traffic-Flow/`](./Traffic-Flow/) | Traffic dynamics | A set of simulations showing phantom jams, bottlenecks, signal timing effects, and geometric traffic design tradeoffs. |
+| [`Vortex-Shedding/`](./Vortex-Shedding/) | Fluid dynamics | Lattice Boltzmann simulation of Von Kármán vortex shedding behind a bluff body. |
+| [`battery-cooling/`](./battery-cooling/) | Thermal management | Interactive EV battery cooling simulation showing heat buildup, coolant effects, and thermal risk thresholds. |
 
-### PID-Drunk-Robot
+## Utilities overview
 
-`PID-Drunk-Robot/` is an interactive control systems simulator that demonstrates how a PID controller stabilizes a simple 1D drone or robot altitude problem. Users can tune the proportional, integral, and derivative gains in real time and immediately observe overshoot, damping, and steady-state correction.
+### Maze Runner
 
-It is designed as a teaching tool for control theory, with an interface optimized for visual demonstrations and screen-recorded educational content.
+A physics-inspired maze solver that combines random maze generation with Laplacian heat diffusion. Instead of using a traditional shortest-path algorithm directly, it constructs a temperature field through the maze and follows the resulting gradient to recover the solution path.
 
-### heat-exchanger
+This project is especially useful as a visual explanation of potential fields, diffusion-based reasoning, and algorithmic animation.
 
-`heat-exchanger/` visualizes the temperature profiles of a 1D heat exchanger using simplified thermal models. It allows users to compare parallel-flow and counter-flow operation and see how exchanger length affects thermal performance.
+### PID Drunk Robot
 
-This utility is helpful for explaining heat transfer fundamentals, exchanger efficiency, and the practical difference between common flow arrangements.
+An interactive simulator for understanding PID control in an intuitive way. By adjusting proportional, integral, and derivative gains live, users can see how each term changes the behavior of a drone-like system attempting to hold a target altitude.
 
-### Sound-Waves
+It works well as a teaching aid for control theory because it turns abstract tuning concepts into visible motion and response curves.
 
-`Sound-Waves/` is a sound visualization utility that turns audio into a combined spectral and particle-based animation. It shows both the frequency content of sound and a physical-style representation of longitudinal wave motion through moving particles.
+### Heat Exchanger
 
-The project focuses on making sound feel tangible, connecting signal processing concepts like FFTs with an intuitive visual model of pressure-wave propagation.
+A compact heat-transfer visualization that compares how hot and cold fluid temperatures evolve in parallel-flow versus counter-flow exchangers. The interactive controls help show why exchanger geometry and flow arrangement matter.
 
-### Topology-Optimization
+It is a practical demo for explaining thermal gradients, exchanger efficiency, and introductory heat-transfer design concepts.
 
-`Topology-Optimization/` demonstrates structural topology optimization for a cantilever beam using the SIMP method. Starting from a full design region, it iteratively removes inefficient material while preserving the load paths needed to carry the applied force.
+### Sound Waves
 
-This utility highlights the relationship between finite element analysis, optimization, and lightweight structural design, and it produces animation output suitable for educational visualization.
+A sound visualization tool that links audio signals to physical wave behavior. It combines spectral analysis with a particle-based rendering of longitudinal wave motion, helping bridge the gap between signal-processing plots and physical intuition.
 
-### Traffic-Flow
+This makes it a strong educational utility for explaining both what sound looks like mathematically and what it means physically.
 
-`Traffic-Flow/` is a collection of traffic simulations that treats vehicle movement as a flow-dynamics problem. The scenarios include phantom traffic jams, toll plaza bottlenecks, signal timing effects, and roundabout-versus-intersection comparisons.
+### Topology Optimization
 
-Together, these simulations explain how congestion, shockwaves, and control strategies emerge from the dynamics of many interacting drivers rather than from any single vehicle.
+A structural design utility that uses SIMP-based topology optimization to evolve a cantilever beam toward an efficient load-bearing form. Material is progressively removed from low-value regions while the key structural paths remain.
 
-### Vortex-Shedding
+It demonstrates the connection between optimization algorithms, finite element analysis, and lightweight engineering design.
 
-`Vortex-Shedding/` simulates Von Kármán vortex shedding behind a bluff body using the Lattice Boltzmann Method. It visualizes the alternating vortices that appear when fluid flow separates and forms a repeating wake pattern.
+### Traffic Flow
 
-This project is especially useful for explaining unsteady fluid dynamics, flow-induced vibration, and why oscillating aerodynamic forces can become important in real engineering systems.
+A collection of traffic simulations that treats vehicle systems as flow systems. Different scenarios explore how instabilities, bottlenecks, light timing, and roadway geometry create congestion patterns and shockwaves.
 
-### battery-cooling
+These examples are especially useful for showing that traffic problems often emerge from system-level dynamics rather than isolated driver decisions.
 
-`battery-cooling/` is an interactive EV battery thermal management simulator. It models heat generation during fast charging and shows how coolant flow rate, coolant temperature, and charging power influence the pack temperature field.
+### Vortex Shedding
 
-The utility is built to explain thermal design tradeoffs in battery systems, including cooling effectiveness, temperature hotspots, and safety thresholds such as degradation or runaway risk.
+A fluid simulation focused on Von Kármán vortex streets, showing how alternating vortices form downstream of a bluff body. The implementation uses the Lattice Boltzmann Method to create an accessible and visually striking CFD-style demonstration.
 
-## Common themes
+It is well suited for explaining unsteady wakes, aerodynamic forcing, and flow-induced vibration in engineering systems.
+
+### Battery Cooling
+
+An interactive EV battery thermal-management simulator that visualizes heat generation and extraction during fast charging. Users can vary charge power, coolant flow, and coolant temperature to see how the pack responds over time.
+
+This utility helps explain practical thermal-design tradeoffs, cooling effectiveness, and safety-related temperature thresholds in battery systems.
+
+## Common characteristics
 
 Across the repository, the utilities are generally:
 
 - Written in **Python**
-- Focused on **simulation, visualization, and numerical methods**
-- Built for **interactive learning** or **educational animation**
+- Built around **simulation, visualization, and numerical methods**
+- Intended for **interactive learning** or **educational animation**
 - Designed to support **vertical/video-friendly engineering demonstrations**
 
 ## Repository structure
 
-- `README.md` — repository overview
-- `Maze-Runner/` — maze generation, heat-diffusion solving, and animation
+- `README.md` — root showcase and repository overview
+- `Maze-Runner/` — maze generation, diffusion-based solving, and animation
 - `PID-Drunk-Robot/` — PID control simulator
-- `heat-exchanger/` — heat exchanger thermal profile simulator
-- `Sound-Waves/` — sound and wave propagation visualization
+- `heat-exchanger/` — heat exchanger thermal profile visualizer
+- `Sound-Waves/` — sound and wave propagation visualizer
 - `Topology-Optimization/` — structural optimization demo
 - `Traffic-Flow/` — traffic dynamics simulation series
-- `Vortex-Shedding/` — fluid wake and vortex shedding simulation
+- `Vortex-Shedding/` — vortex shedding and wake simulation
 - `battery-cooling/` — EV battery thermal management simulator
