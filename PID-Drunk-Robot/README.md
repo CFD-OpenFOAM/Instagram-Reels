@@ -65,9 +65,3 @@ If you are running this inside a Jupyter Notebook, you **must** use an interacti
 * Hit the **Wind Gust** button to push the drone down. With only P and D active, the drone will stabilize *below* the target line (Steady-State Error).
 * Increase `I` to `~1.5`.
 * **Observe:** The drone slowly and smoothly creeps back up to perfectly match the target line. The Integral term "remembers" past errors and builds up the force needed to overcome constant resistance.
-
-
-
-## Project Context
-
-This tool was built to generate visual assets for the **Wrench-Wise** educational engineering platform. It is designed to bridge the gap between heavy mathematical control theory and intuitive, visual learning.
