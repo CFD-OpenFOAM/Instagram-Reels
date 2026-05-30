@@ -116,7 +116,3 @@ Tracing optimal path...
 Rendering video...
 Done! Video saved as laplacian_maze.mp4
 ```
-
-## License
-
-Created by **Wrench-Wise**.
